@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intrinsic Value Calculator</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+  <script type="module" crossorigin src="./assets/index-dwNvhXcO.js"></script>
+</head>
+<body>
+    <h1>Intrinsic Value Calculator</h1>
+    <form id="valueForm">
+        <label for="operatingCashFlow">Operating Cash Flow:</label>
+        <input type="number" id="operatingCashFlow" name="operatingCashFlow" value="10" required><br><br>
+        
+        <label for="capitalExpenditure">Capital Expenditure:</label>
+        <input type="number" id="capitalExpenditure" name="capitalExpenditure" value="1" required><br><br>
+
+        <label for="numberOfYears">Number of Years to Hold:</label>
+        <input type="number" id="numberOfYears" name="numberOfYears" value="10" required><br><br>
+        
+        <label for="annualGrowth">Annual Growth (%):</label>
+        <input type="number" id="annualGrowth" name="annualGrowth" value="10" required><br><br>
+        
+        <label for="cashFlowMultiple">Cash Flow Multiple:</label>
+        <input type="number" id="cashFlowMultiple" name="cashFlowMultiple" value="1" required><br><br>
+        
+        <label for="inflationPercentage">Inflation Percentage (%):</label>
+        <input type="number" id="inflationPercentage" name="inflationPercentage" value="15" required><br><br>
+        
+        <button type="button" id="calculateButton">Calculate</button>
+    </form>
+    
+    <div id="results">
+        <h2>Results</h2>
+        <table id="resultsTable">
+            <thead>
+                <tr>
+                    <th>Year</th>
+                    <th>Cash Flow</th>
+                    <th>Discounted Cash Flow</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be added here by JavaScript -->
+            </tbody>
+        </table>
+        <h3 id="totalValue"></h3>
+    </div>
+    
+    <div>
+        <label for="terminalValue">Terminal Value:</label>
+        <input type="number" id="terminalValue" name="terminalValue" readonly><br><br>
+    </div>
+    
+</body>
+</html>
